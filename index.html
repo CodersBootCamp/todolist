@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts Link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <!-- External CSS Link-->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>To Do List</title>
+</head>
+
+<body>
+
+  <!-- Todo Container -->
+  <div class="todo-outer-box">
+    <div class="todo-inner-box">
+      <header class="todo-heading">To Do List</header>
+      <div class="inputbox">
+        <i class="fa fa-file-text-o" style="margin: 0px 10px 0px 10px;" aria-hidden="true"></i>
+        <input type="text" placeholder="Type your To Do task !!!">
+        <i id="addbtn" class="fa fa-plus-circle"></i>
+      </div>
+      <div class="buttons">
+        <span class="btn clrall">Clear all task</span>
+        <span class="btn clrcomptask">Clear Complete</span>
+      </div>
+      <hr style="margin:5px 0px 10px 0px;">
+      <ul class="todolist"></ul>
+      <div class="buttons">
+        <span>
+          <span class="pendingTasks"></span>
+          Tasks left
+        </span>
+        <div>
+          <span class="btn all">All</span>
+          <span class="btn complete">Complete</span>
+          <span class="btn uncomplete">Uncomplete</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
